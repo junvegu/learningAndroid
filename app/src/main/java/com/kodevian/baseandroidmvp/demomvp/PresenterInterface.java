@@ -7,4 +7,6 @@ package com.kodevian.baseandroidmvp.demomvp;
 public interface PresenterInterface {
 
     void selectedImage(int flag);
+
+    void retrieveUser();
 }

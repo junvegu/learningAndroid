@@ -36,7 +36,13 @@ public class ActivityBlackPink extends AppCompatActivity implements com.kodevian
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_example);
         ButterKnife.bind(this);
-        mPresenter = new Presentador(this);
+        mPresenter = new Presentador(getBaseContext(),this);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mPresenter.retrieveUser();
     }
 
     @OnClick({R.id.invoke, R.id.invoke1})
