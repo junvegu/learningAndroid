@@ -6,7 +6,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.kodevian.baseandroidmvp.adapters.KoreanItem;
 import com.kodevian.baseandroidmvp.demomvp.*;
+
+import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -60,5 +63,12 @@ public class ActivityBlackPink extends AppCompatActivity implements com.kodevian
     @Override
     public void changeImage(int flag) {
         imageKokoro.setBackgroundResource(flag);
+    }
+
+    @Override
+    public void showData(ArrayList<KoreanItem> koreanItems) {
+
+        //adapter
+
     }
 }

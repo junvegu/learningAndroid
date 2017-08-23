@@ -5,6 +5,9 @@ import android.widget.Toast;
 
 import com.kodevian.baseandroidmvp.ActivityBlackPink;
 import com.kodevian.baseandroidmvp.R;
+import com.kodevian.baseandroidmvp.adapters.KoreanItem;
+
+import java.util.ArrayList;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -63,5 +66,24 @@ public class Presentador implements  PresenterInterface {
                 //500
             }
         });
+    }
+
+    @Override
+    public void retrieveMovies() {
+
+
+        ArrayList<KoreanItem> koreanItems = new ArrayList<>();
+
+        koreanItems.add(new KoreanItem());
+        koreanItems.add(new KoreanItem());
+        koreanItems.add(new KoreanItem());
+        koreanItems.add(new KoreanItem());
+        koreanItems.add(new KoreanItem());
+        koreanItems.add(new KoreanItem());
+        koreanItems.add(new KoreanItem());
+        koreanItems.add(new KoreanItem());
+        koreanItems.add(new KoreanItem());
+
+        mView.showData(koreanItems);
     }
 }

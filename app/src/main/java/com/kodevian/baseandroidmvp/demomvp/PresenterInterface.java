@@ -9,4 +9,6 @@ public interface PresenterInterface {
     void selectedImage(int flag);
 
     void retrieveUser();
+
+    void retrieveMovies();
 }
